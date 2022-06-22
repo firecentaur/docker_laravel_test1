@@ -50,8 +50,8 @@ services:
       context: .
       dockerfile: ./infra/docker/mysql/Dockerfile
     ports:
-      - target: 3306
-        published: ${DB_PUBLISHED_PORT:-3306}
+      - target: 4306
+        published: ${DB_PUBLISHED_PORT:-4306}
         protocol: tcp
         mode: host
     volumes:
